@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <title>My first project</title>
     <style>
+        * {
+            user-select: none;
+        }
         .text-center {
             font-size: 24px;
             text-align: center;
+        }
+        .list-task {
+            width: 15%;
+            border: 1px solid;
+            display: inline-block;
+            height: 500px;
+            overflow: auto;
+        }
+        .item {
+            text-align: center;
+            border-bottom: 1px solid #9E9E9E;
+            margin: 0;
+            height: 40px;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .item:active {
+            border-bottom: 2px solid #9E9E9E;
+        }
+        .show-resolve {
+            width: 80%;
+            border: 1px solid;
+            display: inline-block;
+            height: 500px;
+            overflow: auto;
         }
     </style>
 </head>
@@ -14,5 +42,12 @@
 <p class="text-center">Hello, HTML, CSS, JS!</p>
 <p class="text-center">My name is Hokim!</p>
 <p class="text-center"><a href="Zadachnik_Abramyan.pdf" target="_blank">Abramyan.pdf</a></p>
+<div class="list-task">
+    <p class="item">Begin 1</p>
+    <p class="item">Begin 2</p>
+</div>
+<div class="show-resolve">
+
+</div>
 </body>
 </html>
