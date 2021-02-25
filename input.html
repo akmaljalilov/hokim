@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Инпут</title>
+    <style>
+        #divi_1 {
+            border: solid 1px #cccccc;
+            border-radius: 5px;
+        }
+
+        .header {
+            background-color: #cccccc;
+        }
+        .item:first-child {
+            border-bottom: 1px dotted #cccccc;
+        }
+        .item {
+            display: flex;
+        }
+        .column {
+            width: 50%;
+        }
+
+        #rangi_past
+        {
+         border:solid 2px #CCCCCC;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="divi_1">
+    <div class="header">Bezeichnung</div>
+    <div class="items">
+        <div class="item">
+            <div class="column"><span>Bezeich</span></div>
+            <div class="column"><input class="text" placeholder="Masalan"></div>
+        </div>
+        <div class="item">Dieses</div>
+    </div>
+</div>
+
+
+<div id="rangi_past">
+    <div class="header">Kontakdaten</div>
+    <div class="item">
+    <div class="column">Draf Kontactdaten sndern</div>
+    <div class="column"><input type="checkbox" id="ja" name="ja">
+        <label for="ja">ja</label>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
