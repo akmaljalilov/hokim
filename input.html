@@ -4,55 +4,152 @@
     <meta charset="UTF-8">
     <title>Инпут</title>
     <style>
-        #divi_1 {
+        .blok {
             border: solid 1px #cccccc;
             border-radius: 5px;
+            margin: 20px;
+
         }
 
         .header {
             background-color: #cccccc;
+            padding: 5px;
         }
+
         .item:first-child {
             border-bottom: 1px dotted #cccccc;
         }
+
         .item {
             display: flex;
-        }
-        .column {
-            width: 50%;
+            padding: 5px;
+            border-bottom: dotted 2px #cccccc;
         }
 
-        #rangi_past
-        {
-         border:solid 2px #CCCCCC;
+        .item:last-child {
+            border: none;
+        }
+
+        .column {
+            width: 50%;
+
+        }
+
+        .text {
+            border: solid #D4D4D4;
             border-radius: 5px;
+        }
+
+        .input {
+            width: 240px;
+            display: inline-block;
         }
 
 
     </style>
 </head>
 <body>
-<div id="divi_1">
+<div class="blok">
     <div class="header">Bezeichnung</div>
     <div class="items">
         <div class="item">
             <div class="column"><span>Bezeich</span></div>
-            <div class="column"><input class="text" placeholder="Masalan"></div>
+            <div class="column"><input class="text" placeholder="Нависед"></div>
         </div>
         <div class="item">Dieses</div>
     </div>
 </div>
 
-
-<div id="rangi_past">
+<div class="blok">
     <div class="header">Kontakdaten</div>
     <div class="item">
-    <div class="column">Draf Kontactdaten sndern</div>
-    <div class="column"><input type="checkbox" id="ja" name="ja">
-        <label for="ja">ja</label>
-    </div>
+        <div class="column">Draf Kontactdaten sndern</div>
+        <div class="column"><input type="checkbox" id="ja" name="ja">
+            <label for="ja">ja</label>
+        </div>
     </div>
 </div>
 
+
+<div class="blok">
+    <div class="header">Begrenzungen</div>
+    <div class="item">
+        <div class="column"><span>Speicherplatz</span></div>
+        <div class="column">
+            <div class="input">
+                <input class="text" value="10">
+                <select name="audio">
+                    <option value="tb">GB</option>
+                    <option value="gb">TB</option>
+                    <option value="kb">KB</option>
+                    <option value="bit">BIT</option>
+                </select>
+            </div>
+            <input type="checkbox" id="speicherplatz" name="speicherplatz">
+            <label for="speicherplatz">unbegrenzt</label>
+        </div>
+    </div>
+    <div class="item">
+        <div class="column">Traffic</div>
+        <div class="column">
+            <div class="input"><input class="text" value="100">
+            <select name="audio">
+                <option value="tb">GB</option>
+                <option value="gb">TB</option>
+                <option value="kb">KB</option>
+                <option value="bit">BIT</option>
+            </select>
+            </div>
+            <input type="checkbox" class="unbegrenzt" name="trafic" id="trafic">
+            <label for="trafic">unbegrenzt</label>
+        </div>
+    </div>
+
+
+    <div class="item">
+        <div class="column">E mail Kontent</div>
+        <div class="column">
+            <div class="input">
+                <input class="text" value="10">
+            </div>
+            <input type="checkbox" class="unbegrenzt" name="E mail Kontent" id="E mail Kontent">
+            <label for="E mail Kontent">unbegrenzt</label>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="column">Subdomains</div>
+        <div class="column">
+            <div class="input"><input class="text" value="10">
+            </div>
+            <input type="checkbox" class="unbegrenzt" name="Subdomains" id="Subdomains ">
+            <label for="Subdomains ">unbegrenzt</label>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="column">MySQL</div>
+        <div class="column"><input class="text" value="5">
+            <input type="checkbox" class="unbegrenzt" name="MySQL" id="MySQL ">
+            <label for="MySQL ">unbegrenzt</label>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="column">FTP benutzer</div>
+        <div class="column"><input class="text" value="5">
+            <input type="checkbox" class="unbegrenzt" name="FTP benutzer" id="FTP benutzer ">
+            <label for="FTP benutzer ">unbegrenzt</label>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="column">Geplante Aufgaben</div>
+        <div><input class="text" value="2">
+            <input type="checkbox" class="unbegrenzt" name="Geplante Aufgaben" id="Geplante Aufgaben ">
+            <label for="Geplante Aufgaben ">unbegrenzt</label>
+        </div>
+    </div>
+</div>
 </body>
 </html>
