@@ -1,6 +1,6 @@
-const A = 12;
-const B = 14;
-const C = 16;
+const A = 4;
+const B = 8;
+const C = 6;
 const AC = (A - C);
 document.write("AC = ",AC);
 document.write('\n');
