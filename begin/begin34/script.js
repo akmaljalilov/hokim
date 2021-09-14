@@ -1,7 +1,12 @@
 const X = 5;
-const A = 7;
-const B = 4;
-const Y = 6;
-
-const S =(B*A)/X;
-document.write("W= ",W);
+const A = 10;
+const Z = (A * 1)/X;
+const Y = 2;
+const B = 20;
+const K = (B*1)/Y;
+const S = K-Z;
+document.write("Z= ",Z);
+document.write('\n');
+document.write("K= ",K);
+document.write('\n');
+document.write("S= ",S);
