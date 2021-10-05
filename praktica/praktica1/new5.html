@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hi HTML</title>
-    <script>
-        function  countToTen(){
-            var i = 0;
-            while(i < 10) {
-                i++;
-                document.getElementById("theCount").innerHTML += i + "<br>";
-            }
-        }
-    </script>
+    <title>Document</title>
 </head>
-<body onload="countToTen();">
-
-<h1>Посчитаем до 10 вместе с JavaScript!</h1>
-<p id="theCount"></p>
-<button id="bigButton" onclick="alert('Hello world')">Click</button>
+<body>
+<script>
+    let i;
+    let n, a;
+    n = 5;
+    a = 4;
+    mult = 1;
+    for (i = 0; i < n; i++)
+    {
+        mult = mult * (a + i);
+        i++;
+    }
+    console.log(mult);
+</script>
 </body>
 </html>
